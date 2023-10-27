@@ -264,13 +264,14 @@ footer {
     color: #3b3b3bd2;
 }
 
-.ico-footer > ul > li {
-    margin: 10px;
-    padding-left: 30px;
+.list-footer {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    list-style: none;
 }
 
-.ico-footer > ul > li > i {
-    padding: 10px;
+.list-footer > li {
+    margin: 20px 0px;
 }
 
 .input-rodape {   
