@@ -199,9 +199,9 @@ aside  p {
 
 
 .subtexto {
-    text-indent: 50px;
+    font-size: 1.3em;
     text-align: center;
-    color: black;
+    color: rgb(71, 71, 71);
 }
 
 .join-newsletter {
@@ -271,7 +271,11 @@ footer {
 }
 
 .list-footer > li {
-    margin: 20px 0px;
+    margin: 10px;
+}
+
+.list-footer i {
+    margin-right: 20px;
 }
 
 .list-footer .phone {
