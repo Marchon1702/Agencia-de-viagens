@@ -274,8 +274,7 @@ footer {
 }
 
 .input-rodape {   
-    display: block;
-    margin: auto;
+    padding-left: 50px;
     width: 80vw;
 }
 
