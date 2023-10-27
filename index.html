@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Layout DevMedia</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <header>
+        <section class="cabecalho">
+            <div class="logo">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <h1>Logo</h1>
+            </div>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>  
+            </div>                
+        </section>                          
+        <section class="back-image">
+            <section class="menu-menor"> <!-- Criada para diminuir com media querie-->
+                <nav class="menu">
+                    <a href="" class="laranja"><i class="fa fa-plane" aria-hidden="true"></i> Fligth</a>
+                    <a href=""><i class="fa fa-bed" aria-hidden="true"></i>Hotel</a>
+                    <a href=""><i class="fa fa-car" aria-hidden="true"></i> Rental</a>
+                </nav>
+                <div class="formulario">
+                    <h1>Travel the world whith us</h1>
+                    <label for="de"> From</label>
+                    <br>
+                    <input type="text" name="de" id="de" placeholder="Departing from:">
+                    <br>
+                    <label for="para">To</label>
+                    <br>
+                    <input type="text" name="para" id="para" placeholder="Arraving at:">
+                    <input type="button" id="enviar-form" value="Search and find dates">
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <h1>Good Offers Rigth Now</h1>
+        <h2>Up to <strong>50%</strong> discount</h2>
+        <div class="imgdiv">
+            <img src="imagens/cinqueterre.jpg" alt="cinqueterre">
+            <h3>Cinque Terre</h3>
+        </div>
+        <div class="imgdiv">
+            <img src="imagens/newyork.jpg" alt="New York">
+            <h3>New York</h3>
+        </div>
+        <div class="imgdiv">
+            <img src="imagens/sanfran.jpg" alt="São Francisco">
+            <h3>São Francisco</h3>
+        </div>
+        <div class="imgdiv">
+            <img src="imagens/pisa.jpg" alt="Torre de Pisa">
+            <h3>Pisa</h3>
+        </div>
+        <div class="imgdiv">
+            <img src="imagens/paris.jpg" alt="Paris">
+            <h3>Paris</h3>
+        </div>
+        <aside>
+                <h1>Explore Nature</h1>
+                <p>Travel whith us and see the nature at its finest</p>
+                <div class="imgaside">
+                    <img src="imagens/ocean.jpg" alt="Oceano" class="img2">
+                    <h1>West Coast, Norway</h1>
+                    <p>Roundtrip from $79.</p>
+                    <p class="subtexto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p>Buy Tickets</p>
+                </div>
+                <div class="imgaside">
+                    <img src="imagens/mountains.jpg" alt="Mountanis Austria" class="img2">
+                    <h1>Mountanis, Austria</h1>
+                    <p>One-way from $39</p>
+                    <p class="subtexto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p>Buy Tickets</p>
+                </div>
+                <div class="join-newsletter">
+                    <h1>Get the best offers first!</h1>
+                    <p>Join our newsletter.</p>
+                    <label for="email" class="email">E-mail:</label>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Your Email address">
+                    <input type="button" name="escrever-se" id="escrever-se" value="Subscribe">
+                </div>
+        </aside>
+    </main>
+    <footer>
+        <section class="roda-pe">
+            <h1>Contact</h1>
+            <p>Let us book your next trip!</p>
+            <div class="ico-footer">
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true" id="loc-realoc"></i>
+                    Chicago, US
+                    </li>
+                    <li><i class="fa fa-phone" aria-hidden="true" id="loc-realoc2"></i>
+                    Phone: +00 151515
+                    </li>
+                    <li><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    E-mail: mail@mail.com
+                    </li>
+                </ul>
+            </div>
+            <div class="input-rodape"> 
+                <input type="text" id="nome-usuario" class="last-inputs" value="Name">
+                <br>
+                <input type="email" id="email-usuario" class="last-inputs" value="E-mail">
+                <br>
+                <input type="text" id="mensagem-usuario" class="last-inputs" value="Message">
+                <br>
+                <input type="button" id="send-message" value="Send message">
+            </div>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/32d6f1e6b0.js" crossorigin="anonymous"></script>
+</body>
+</html>
