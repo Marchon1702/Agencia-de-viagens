@@ -274,6 +274,11 @@ footer {
     margin: 20px 0px;
 }
 
+.list-footer .phone {
+    display: flex;
+    color: black;
+}
+
 .input-rodape {   
     padding-left: 50px;
     width: 80vw;
