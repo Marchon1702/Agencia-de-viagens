@@ -143,6 +143,10 @@
         display: flex;
       }
 
+      .pontos-turisticos  h3 {
+        margin-left: 10px;
+      }
+
       .twoem1 {
         display: flex;
       }
@@ -158,15 +162,15 @@
       }
 
       .fourem1 {
-        transform: translateX(-50px);
         position: relative;
+        transform: translateX(-50px);        
       }
 
       .fourem1 h3 {
         width: 30%;
         font-size: 1em;
-        transform: translate(20px,-40px);
         position: relative;
+        transform: translate(20px,-40px);       
       }
 
       .lado-a-lado {
