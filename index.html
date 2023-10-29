@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Layout DevMedia</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
 <body>
     <header>
@@ -29,11 +30,13 @@
                     <h1>Travel the world whith us</h1>
                     <label for="de"> From</label>
                     <br>
-                    <input type="text" name="de" id="de" placeholder="Departing from:" class="input-form1">
-                    <br>
-                    <label for="para">To</label>
-                    <br>
-                    <input type="text" name="para" id="para" placeholder="Arraving at:" class="input-form1">
+                    <div class="inputs-inline">
+                        <input type="text" name="de" id="de" placeholder="Departing from:" class="input-form1">
+                        <br>
+                            <label for="para" class="to">To </label>
+                            <br>
+                            <input type="text" name="para" id="para" placeholder="Arraving at:" class="input-form1">
+                    </div>
                     <input type="button" id="enviar-form" value="Search and find dates">
                 </div>
             </section>
@@ -42,42 +45,52 @@
     <main>
         <h1>Good Offers Rigth Now</h1>
         <h2>Up to <strong>50%</strong> discount</h2>
-        <div class="imgdiv">
-            <img src="imagens/cinqueterre.jpg" alt="cinqueterre">
-            <h3>Cinque Terre</h3>
-        </div>
-        <div class="imgdiv">
-            <img src="imagens/newyork.jpg" alt="New York">
-            <h3>New York</h3>
-        </div>
-        <div class="imgdiv">
-            <img src="imagens/sanfran.jpg" alt="São Francisco">
-            <h3>São Francisco</h3>
-        </div>
-        <div class="imgdiv">
-            <img src="imagens/pisa.jpg" alt="Torre de Pisa">
-            <h3>Pisa</h3>
-        </div>
-        <div class="imgdiv">
-            <img src="imagens/paris.jpg" alt="Paris">
-            <h3>Paris</h3>
-        </div>
+        <section class="pontos-turisticos"> <!--Feita para alinhar cinqueterre as outras 4em1-->
+            <div class="imgdiv">
+                <img src="imagens/cinqueterre.jpg" alt="cinqueterre" class="cinque-terre">
+                <h3>Cinque Terre</h3>
+            </div>
+            <div class="fourem1">
+                <div class="twoem1">
+                    <div class="imgdiv">
+                        <img src="imagens/newyork.jpg" alt="New York">
+                        <h3>New York</h3>
+                    </div>
+                    <div class="imgdiv">
+                        <img src="imagens/sanfran.jpg" alt="São Francisco">
+                        <h3>São Francisco</h3>
+                    </div>
+                </div>
+                <div class="twoem1">
+                    <div class="imgdiv">
+                        <img src="imagens/pisa.jpg" alt="Torre de Pisa">
+                        <h3 style="margin-top: 10px;">Pisa</h3>
+                    </div>
+                    <div class="imgdiv">
+                        <img src="imagens/paris.jpg" alt="Paris">
+                        <h3 style="margin-top: 10px;">Paris</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
         <aside>
                 <h1>Explore Nature</h1>
                 <p>Travel whith us and see the nature at its finest</p>
-                <div class="imgaside">
-                    <img src="imagens/ocean.jpg" alt="Oceano" class="img2">
-                    <h1>West Coast, Norway</h1>
-                    <p>Roundtrip from $79.</p>
-                    <p class="subtexto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <p>Buy Tickets</p>
-                </div>
-                <div class="imgaside">
-                    <img src="imagens/mountains.jpg" alt="Mountanis Austria" class="img2">
-                    <h1>Mountanis, Austria</h1>
-                    <p>One-way from $39</p>
-                    <p class="subtexto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <p>Buy Tickets</p>
+                <div class="lado-a-lado">
+                    <div class="imgaside">
+                        <img src="imagens/ocean.jpg" alt="Oceano" class="img2">
+                        <h1>West Coast, Norway</h1>
+                        <p>Roundtrip from $79.</p>
+                        <p class="subtexto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <p>Buy Tickets</p>
+                    </div>
+                    <div class="imgaside">
+                        <img src="imagens/mountains.jpg" alt="Mountanis Austria" class="img2">
+                        <h1>Mountanis, Austria</h1>
+                        <p>One-way from $39</p>
+                        <p class="subtexto">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <p>Buy Tickets</p>
+                    </div>
                 </div>
                 <div class="join-newsletter">
                     <h1>Get the best offers first!</h1>
@@ -107,11 +120,11 @@
                 </ul>
             </div>
             <div class="input-rodape"> 
-                <input type="text" id="nome-usuario" class="last-inputs" value="Name">
+                <input type="text" id="nome-usuario" class="last-inputs" placeholder="Name">
                 <br>
-                <input type="email" id="email-usuario" class="last-inputs" value="E-mail">
+                <input type="email" id="email-usuario" class="last-inputs" placeholder="E-mail">
                 <br>
-                <input type="text" id="mensagem-usuario" class="last-inputs" value="Message">
+                <input type="text" id="mensagem-usuario" class="last-inputs" placeholder="Message">
                 <br>
                 <input type="button" id="send-message" value="Send message">
             </div>

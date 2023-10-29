@@ -46,7 +46,7 @@
 }
 
 .menu-menor {
-    width: 100vw;
+    width: 100%;
 }
 
 .menu {
@@ -297,7 +297,7 @@ footer {
     margin-bottom: 20px;
     border: 1px solid rgb(175, 175, 175);
     font-size: 1.3em;   
-    color: #b1b1b1;
+    color: #000000;
 }
 
 #send-message {
@@ -307,6 +307,7 @@ footer {
     background-color: black;
     color: white;
     font-size: 1.6em;
+    cursor: pointer;
 }
 
 .redes-sociais {
